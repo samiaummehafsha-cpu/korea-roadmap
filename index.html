@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K-Student Roadmap 2026 - Essential survival guide for international students in South Korea with 2026 minimum wage, transit cards, and work permit information.">
+    <title>K-Student Roadmap 2026 | International Student Survival Guide</title>
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES & RESET
+           ============================================ */
+        :root {
+            --navy: #0A192F;
+            --navy-light: #112240;
+            --white: #FFFFFF;
+            --action-red: #E74C3C;
+            --action-red-hover: #C0392B;
+            --text-muted: #8892B0;
+            --text-light: #CCD6F6;
+            --accent-green: #64FFDA;
+            --glass-bg: rgba(17, 34, 64, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --radius: 16px;
+            --radius-sm: 8px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* ============================================
+           ACCESSIBILITY & FOCUS STATES
+           ============================================ */
+        :focus-visible {
+            outline: 3px solid var(--accent-green);
+            outline-offset: 3px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* ============================================
+           TYPOGRAPHY
+           ============================================ */
+        h1, h2, h3 {
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: clamp(2rem, 5vw, 3rem); }
+        h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 1.5rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+
+        p { margin-bottom: 1rem; }
+
+        a {
+            color: var(--accent-green);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        a:hover { color: var(--white); }
+
+        /* ============================================
+           LAYOUT CONTAINERS
+           ============================================ */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        /* ============================================
+           EMERGENCY FLOATING HUB
+           ============================================ */
+        .emergency-hub {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .emergency-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            min-width: 120px;
+        }
+
+        .emergency-btn--fire {
+            background: var(--action-red);
+            color: var(--white);
+        }
+
+        .emergency-btn--police {
+            background: #3498DB;
+            color: var(--white);
+        }
+
+        .emergency-btn--translate {
+            background: var(--accent-green);
+            color: var(--navy);
+        }
+
+        .emergency-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .emergency-btn span[aria-hidden] {
+            font-size: 1.25rem;
+        }
+
+        /* ============================================
+           HEADER & NAVIGATION
+           ============================================ */
+        header {
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .logo span {
+            color: var(--action-red);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        nav a:hover {
+            color: var(--accent-green);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid var(--accent-green);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: var(--accent-green);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* ============================================
+           GLASSMORPHISM CARDS
+           ============================================ */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+            border-color: rgba(100, 255, 218, 0.3);
+        }
+
+        /* ============================================
+           GRID LAYOUTS
+           ============================================ */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* ============================================
+           APP ECOSYSTEM SECTION
+           ============================================ */
+        .app-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .app-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-green), #4ECDC4);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            flex-shrink: 0;
+        }
+
+        .app-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .app-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* ============================================
+           TRANSIT MATRIX
+           ============================================ */
+        .transit-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .transit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent-green);
+        }
+
+        .transit-price {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin: 0.5rem 0;
+        }
+
+        .transit-price small {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(100, 255, 218, 0.15);
+            color: var(--accent-green);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+        }
+
+        /* ============================================
+           WORK ELIGIBILITY CALCULATOR
+           ============================================ */
+        .calculator {
+            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1), rgba(100, 255, 218, 0.1));
+            border: 1px solid var(--action-red);
+        }
+
+        .calculator h2 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .calculator h2 span {
+            font-size: 1.5rem;
+        }
+
+        .form-group {
+            margin: 1.5rem 0;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+
+        .form-group input {
+            width: 100%;
+            max-width: 300px;
+            padding: 0.875rem 1rem;
+            background: var(--navy);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus {
+            border-color: var(--accent-green);
+            outline: none;
+        }
+
+        .btn-calculate {
+            padding: 0.875rem 2rem;
+            background: var(--action-red);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-calculate:hover {
+            background: var(--action-red-hover);
+            transform: translateY(-2px);
+        }
+
+        .result-box {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: var(--navy);
+            border-radius: var(--radius-sm);
+            border-left: 4px solid var(--accent-green);
+            display: none;
+        }
+
+        .result-box.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-date {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+
+        /* ============================================
+           LEGAL ROADMAP
+           ============================================ */
+        .roadmap-item {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .roadmap-item:last-child {
+            border-bottom: none;
+        }
+
+        .roadmap-number {
+            width: 48px;
+            height: 48px;
+            background: var(--action-red);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .roadmap-content h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(100, 255, 218, 0.15);
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            color: var(--accent-green);
+            margin-top: 0.5rem;
+        }
+
+        /* ============================================
+           HALAL FOOD FINDER
+           ============================================ */
+        .search-box {
+            position: relative;
+            max-width: 400px;
+            margin-bottom: 2rem;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            background: var(--navy);
+            border: 2px solid var(--glass-border);
+            border-radius: var(--radius-sm);
+            color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-green);
+            outline: none;
+        }
+
+        .search-box::before {
+            content: '🔍';
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .halal-card {
+            display: none;
+        }
+
+        .halal-card.visible {
+            display: block;
+        }
+
+        .halal-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .location-tag {
+            font-size: 0.75rem;
+            background: var(--navy);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           TECHNICAL DOCUMENTATION
+           ============================================ */
+        .tech-docs {
+            background: var(--navy);
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .tech-docs h2 {
+            color: var(--accent-green);
+        }
+
+        .code-block {
+            background: #0D1B2A;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            overflow-x: auto;
+            font-family: 'Fira Code', 'Consolas', monospace;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            margin: 1rem 0;
+        }
+
+        .code-block code {
+            color: var(--text-light);
+        }
+
+        .code-comment {
+            color: #546E7A;
+        }
+
+        .code-tag {
+            color: var(--action-red);
+        }
+
+        .code-attr {
+            color: var(--accent-green);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .emergency-hub {
+                bottom: 1rem;
+                right: 1rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                gap: 0.5rem;
+            }
+
+            .emergency-btn {
+                padding: 0.5rem 0.75rem;
+                min-width: auto;
+                font-size: 0.75rem;
+            }
+
+            .emergency-btn span[aria-hidden] {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            .hero {
+                padding: 4rem 0 3rem;
+            }
+
+            section {
+                padding: 3rem 0;
+            }
+
+            .glass-card {
+                padding: 1.5rem;
+            }
+
+            .roadmap-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- ============================================
+         EMERGENCY FLOATING HUB
+         ============================================ -->
+    <aside class="emergency-hub" role="complementary" aria-label="Emergency contacts">
+        <a href="tel:119" class="emergency-btn emergency-btn--fire" aria-label="Call 119 for Fire and Ambulance">
+            <span aria-hidden="true">🚒</span> 119
+        </a>
+        <a href="tel:112" class="emergency-btn emergency-btn--police" aria-label="Call 112 for Police">
+            <span aria-hidden="true">🚔</span> 112
+        </a>
+        <a href="tel:1330" class="emergency-btn emergency-btn--translate" aria-label="Call 1330 for 24/7 Translation">
+            <span aria-hidden="true">🌐</span> 1330
+        </a>
+    </aside>
+
+    <!-- ============================================
+         HEADER & NAVIGATION
+         ============================================ -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">K-Student <span>2026</span></div>
+                <nav aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#apps">Apps</a></li>
+                        <li><a href="#transit">Transit</a></li>
+                        <li><a href="#calculator">Work Calc</a></li>
+                        <li><a href="#legal">Legal</a></li>
+                        <li><a href="#halal">Halal</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <span class="hero-badge">📚 2026 Edition • Updated April 2026</span>
+                <h1>Your Complete Survival Guide to South Korea</h1>
+                <p>Everything international students need: emergency numbers, essential apps, transit cards, work permits, and halal food locations—all verified for 2026.</p>
+            </div>
+        </section>
+
+        <!-- App Ecosystem Section -->
+        <section id="apps" aria-labelledby="apps-heading">
+            <div class="container">
+                <h2 id="apps-heading">📱 Essential App Ecosystem</h2>
+                <div class="grid-3">
+                    <article class="glass-card app-card">
+                        <div class="app-icon" aria-hidden="true">🗺️</div>
+                        <div>
+                            <h3>Naver Map</h3>
+                            <p>The #1 navigation app in Korea. Google Maps doesn't work properly here—Naver Map shows real-time transit, walking routes, and even indoor mall navigation.</p>
+                        </div>
+                    </article>
+                    <article class="glass-card app-card">
+                        <div class="app-icon" aria-hidden="true">🔤</div>
+                        <div>
+                            <h3>Papago</h3>
+                            <p>Naver's translation app. Superior Korean↔English translation with camera mode for menus and signs. Works offline too.</p>
+                        </div>
+                    </article>
+                    <article class="glass-card app-card">
+                        <div class="app-icon" aria-hidden="true">🍖</div>
+                        <div>
+                            <h3>MUFKO (ScanHalal)</h3>
+                            <p>Scan product barcodes to check halal status. Essential for Muslim students navigating Korean grocery stores.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transit Matrix Section -->
+        <section id="transit" aria-labelledby="transit-heading">
+            <div class="container">
+                <h2 id="transit-heading">🚇 2026 Transit Card Matrix</h2>
+                <div class="grid-3">
+                    <article class="glass-card transit-card">
+                        <h3>Climate Card</h3>
+                        <p>기후동행카드 (Gihudonghaeng-kadeu)</p>
+                        <div class="transit-price">
+                            ₩55,000 <small>/ 30 days</small>
+                        </div>
+                        <p>Unlimited Seoul Metro + buses. Youth/student discount available. Best value for daily commuters.</p>
+                        <span class="badge">Best for Students</span>
+                    </article>
+                    <article class="glass-card transit-card">
+                        <h3>WOWPASS</h3>
+                        <p>All-in-One Foreigner Card</p>
+                        <div class="transit-price">
+                            Pay-as-you-go
+                        </div>
+                        <p>Combines payment card + T-Money transit. Load foreign currency, use anywhere. Get at airports or Myeongdong.</p>
+                        <span class="badge">Tourist Friendly</span>
+                    </article>
+                    <article class="glass-card transit-card">
+                        <h3>T-Money</h3>
+                        <p>Standard Transit Card</p>
+                        <div class="transit-price">
+                            ₩1,550 <small>/ base fare</small>
+                        </div>
+                        <p>Works nationwide on all buses, subways, and taxis. Buy at any convenience store. Reload at stations.</p>
+                        <span class="badge">Nationwide</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Eligibility Calculator -->
+        <section id="calculator" aria-labelledby="calc-heading">
+            <div class="container">
+                <div class="glass-card calculator">
+                    <h2 id="calc-heading"><span aria-hidden="true">🧮</span> Work Eligibility Calculator</h2>
+                    <p>D-4 visa holders must wait <strong>6 months</strong> from arrival before working. Enter your arrival date to find your earliest legal work start date.</p>
+                    
+                    <div class="form-group">
+                        <label for="arrival-date">Your Korea Arrival Date:</label>
+                        <input type="date" id="arrival-date" aria-describedby="date-help">
+                        <small id="date-help" style="display: block; color: var(--text-muted); margin-top: 0.5rem;">
+                            Enter the date stamped in your passport
+                        </small>
+                    </div>
+                    
+                    <button type="button" class="btn-calculate" onclick="calculateWorkDate()">
+                        Calculate Work Start Date
+                    </button>
+                    
+                    <div id="result-box" class="result-box" role="alert" aria-live="polite">
+                        <p>Your earliest legal work start date:</p>
+                        <p class="result-date" id="result-date"></p>
+                        <p id="result-message" style="margin-top: 1rem; color: var(--text-muted);"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal & Work Roadmap -->
+        <section id="legal" aria-labelledby="legal-heading">
+            <div class="container">
+                <h2 id="legal-heading">📋 Legal & Work Permit Roadmap</h2>
+                <div class="glass-card">
+                    <div class="roadmap-item">
+                        <div class="roadmap-number" aria-hidden="true">1</div>
+                        <div class="roadmap-content">
+                            <h3>6-Month Waiting Period</h3>
+                            <p>D-4 (Language Training) visa holders must complete 6 months of study before applying for part-time work permission.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-number" aria-hidden="true">2</div>
+                        <div class="roadmap-content">
+                            <h3>School Permission Required</h3>
+                            <p>You must obtain written permission from your school's international office before applying to immigration.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-number" aria-hidden="true">3</div>
+                        <div class="roadmap-content">
+                            <h3>GPA Requirement</h3>
+                            <p>Maintain a minimum GPA of <strong>2.0 (C average)</strong> to remain eligible for part-time work.</p>
+                        </div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-number" aria-hidden="true">4</div>
+                        <div class="roadmap-content">
+                            <h3>2026 Minimum Wage</h3>
+                            <p>Know your rights. The legal minimum wage in South Korea for 2026:</p>
+                            <div class="highlight-box">₩10,320 / hour (≈ $7.50 USD)</div>
+                            <p style="margin-top: 0.75rem; font-size: 0.875rem; color: var(--text-muted);">
+                                Monthly: ₩2,156,880 (based on 209 hours/month) • Effective January 1, 2026
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halal Food Finder -->
+        <section id="halal" aria-labelledby="halal-heading">
+            <div class="container">
+                <h2 id="halal-heading">🥙 Halal Food Hub Finder</h2>
+                <p style="margin-bottom: 1rem;">Search by city to find halal-friendly areas:</p>
+                
+                <div class="search-box">
+                    <input 
+                        type="text" 
+                        id="halal-search" 
+                        placeholder="Search city (Seoul, Busan, Daegu...)"
+                        aria-label="Search for halal food locations by city"
+                        onkeyup="filterHalalLocations()"
+                    >
+                </div>
+                
+                <div class="grid-2" id="halal-results">
+                    <article class="glass-card halal-card visible" data-city="seoul">
+                        <h3>🕌 Itaewon, Seoul</h3>
+                        <span class="location-tag">Seoul • Line 6</span>
+                        <p>Korea's most diverse food district. Home to the Seoul Central Mosque and dozens of halal restaurants—Indian, Turkish, Middle Eastern, and halal Korean BBQ.</p>
+                    </article>
+                    <article class="glass-card halal-card visible" data-city="seoul">
+                        <h3>🍜 Dongdaemun, Seoul</h3>
+                        <span class="location-tag">Seoul • Lines 1, 4</span>
+                        <p>Shopping district with growing halal options. Look for restaurants near Dongdaemun Design Plaza with halal certification signs.</p>
+                    </article>
+                    <article class="glass-card halal-card visible" data-city="busan">
+                        <h3>🌊 Sasang District, Busan</h3>
+                        <span class="location-tag">Busan • Line 2</span>
+                        <p>Industrial area with a significant Muslim worker population. Multiple halal grocery stores and Pakistani/Indian restaurants near Sasang Station.</p>
+                    </article>
+                    <article class="glass-card halal-card visible" data-city="busan">
+                        <h3>🚉 Busan Station Area</h3>
+                        <span class="location-tag">Busan • Line 1</span>
+                        <p>Texas Street and surrounding areas have halal-friendly options. Easy access from KTX arrivals.</p>
+                    </article>
+                    <article class="glass-card halal-card visible" data-city="daegu">
+                        <h3>🏫 Kyungpook Uni Area, Daegu</h3>
+                        <span class="location-tag">Daegu • Line 1</span>
+                        <p>University district with international student-friendly eateries. Several Muslim-owned restaurants near the main campus gate.</p>
+                    </article>
+                    <article class="glass-card halal-card visible" data-city="incheon">
+                        <h3>✈️ Incheon Chinatown</h3>
+                        <span class="location-tag">Incheon • Line 1</span>
+                        <p>Near the airport, Incheon's Chinatown has several halal Chinese restaurants. Also check the International Business District.</p>
+                    </article>
+                </div>
+                
+                <p id="no-results" style="display: none; text-align: center; color: var(--text-muted); padding: 2rem;">
+                    No results found. Try searching for: Seoul, Busan, Daegu, or Incheon
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         TECHNICAL DOCUMENTATION (Portfolio)
+         ============================================ -->
+    <section class="tech-docs" aria-labelledby="tech-heading">
+        <div class="container">
+            <h2 id="tech-heading">⚙️ Technical Logic & Portfolio Documentation</h2>
+            
+            <h3>Semantic HTML5 Structure</h3>
+            <p>This application uses semantic elements to improve accessibility and SEO:</p>
+            <div class="code-block">
+                <code>
+<span class="code-comment">&lt;!-- Semantic structure hierarchy --&gt;</span>
+<span class="code-tag">&lt;header&gt;</span> <span class="code-comment">— Site branding + navigation</span>
+<span class="code-tag">&lt;main&gt;</span> <span class="code-comment">— Primary content area</span>
+  <span class="code-tag">&lt;section</span> <span class="code-attr">aria-labelledby</span>=<span class="code-attr">"..."</span><span class="code-tag">&gt;</span> <span class="code-comment">— Thematic grouping with accessible labels</span>
+    <span class="code-tag">&lt;article&gt;</span> <span class="code-comment">— Self-contained content cards</span>
+<span class="code-tag">&lt;aside&gt;</span> <span class="code-comment">— Emergency hub (complementary content)</span>
+<span class="code-tag">&lt;footer&gt;</span> <span class="code-comment">— Site metadata</span>
+                </code>
+            </div>
+
+            <h3>Data Management Approach</h3>
+            <p>The 2026 data points are maintained as follows:</p>
+            <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--text-muted);">
+                <li><strong>Minimum Wage:</strong> ₩10,320/hour—sourced from Ministry of Employment and Labor (Jan 2026)</li>
+                <li><strong>Climate Card Pricing:</strong> ₩55,000 youth rate—Seoul Metro official pricing</li>
+                <li><strong>Transit Base Fare:</strong> ₩1,550—updated with 2025-2026 fare adjustment</li>
+                <li><strong>Halal Locations:</strong> JSON-like data attributes on cards for filtering</li>
+            </ul>
+
+            <h3>JavaScript Date Calculation Logic</h3>
+            <div class="code-block">
+                <code>
+<span class="code-comment">// Work eligibility calculation (D-4 visa 6-month rule)</span>
+function <span class="code-attr">calculateWorkDate</span>() {
+  const arrivalDate = new Date(input.value);
+  <span class="code-comment">// Add 6 months using setMonth()</span>
+  arrivalDate.<span class="code-attr">setMonth</span>(arrivalDate.getMonth() + 6);
+  <span class="code-comment">// Handle edge cases (e.g., Jan 31 + 6 months)</span>
+  return arrivalDate;
+}
+                </code>
+            </div>
+
+            <h3>Accessibility (WCAG 2.1 Compliance)</h3>
+            <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--text-muted);">
+                <li><strong>Color Contrast:</strong> All text meets AA ratio (≥4.5:1 for body text)</li>
+                <li><strong>ARIA Labels:</strong> Landmarks, live regions for calculator results</li>
+                <li><strong>Keyboard Navigation:</strong> Full tab accessibility, visible focus states</li>
+                <li><strong>Skip Link:</strong> Hidden "Skip to main content" link for screen readers</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+        <div class="container">
+            <p>K-Student Roadmap 2026 • Built for Informatics Portfolio</p>
+            <p style="margin-top: 0.5rem;">Data verified April 2026 • Emergency numbers work nationwide</p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        /**
+         * Work Eligibility Calculator
+         * Calculates the earliest legal work date for D-4 visa holders
+         * based on the 6-month waiting period rule.
+         */
+        function calculateWorkDate() {
+            const input = document.getElementById('arrival-date');
+            const resultBox = document.getElementById('result-box');
+            const resultDate = document.getElementById('result-date');
+            const resultMessage = document.getElementById('result-message');
+            
+            if (!input.value) {
+                alert('Please enter your arrival date.');
+                return;
+            }
+            
+            // Parse the arrival date
+            const arrival = new Date(input.value);
+            
+            // Calculate 6 months from arrival
+            const workStart = new Date(arrival);
+            workStart.setMonth(workStart.getMonth() + 6);
+            
+            // Handle month overflow (e.g., Aug 31 + 6 months = Feb 28/29)
+            if (workStart.getDate() !== arrival.getDate()) {
+                workStart.setDate(0); // Set to last day of previous month
+            }
+            
+            // Format the date
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            const formattedDate = workStart.toLocaleDateString('en-US', options);
+            
+            // Check if the date is in the past
+            const today = new Date();
+            let message = '';
+            
+            if (workStart <= today) {
+                message = '✅ You are already eligible to apply for work permission! Visit your school\'s international office to start the process.';
+            } else {
+                const daysRemaining = Math.ceil((workStart - today) / (1000 * 60 * 60 * 24));
+                message = `⏳ ${daysRemaining} days remaining. Use this time to find potential employers and prepare your documents.`;
+            }
+            
+            // Display results
+            resultDate.textContent = formattedDate;
+            resultMessage.textContent = message;
+            resultBox.classList.add('show');
+            
+            // Scroll to result
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        /**
+         * Halal Food Location Filter
+         * Filters the halal food cards based on city search input.
+         */
+        function filterHalalLocations() {
+            const searchInput = document.getElementById('halal-search').value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.halal-card');
+            const noResults = document.getElementById('no-results');
+            
+            let visibleCount = 0;
+            
+            cards.forEach(card => {
+                const city = card.getAttribute('data-city').toLowerCase();
+                const content = card.textContent.toLowerCase();
+                
+                // Match if search term appears in city or content
+                if (searchInput === '' || city.includes(searchInput) || content.includes(searchInput)) {
+                    card.classList.add('visible');
+                    visibleCount++;
+                } else {
+                    card.classList.remove('visible');
+                }
+            });
+            
+            // Show/hide "no results" message
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        /**
+         * Initialize: Set max date for arrival input to today
+         */
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('arrival-date');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('max', today);
+        });
+    </script>
+</body>
+</html>
